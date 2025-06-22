@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>My Blog</h1>
+
+  <div id="main">
+    <div id="post-list">
+      <!-- Blog titles will show here -->
+    </div>
+
+    <div id="post-detail">
+      <p>Click a post title to see details.</p>
+    </div>
+
+    <form id="new-post-form">
+      <h3>Add New Post</h3>
+      <input type="text" name="title" placeholder="Title" required>
+      <br>
+      <textarea name="content" placeholder="Content" required></textarea>
+      <br>
+      <input type="text" name="author" placeholder="Author" required>
+      <br>
+      <button type="submit">Add Post</button>
+    </form>
+
+    <form id="edit-post-form" class="hidden">
+      <h4>Edit Post</h4>
+      <input type="text" name="title" id="edit-title" required>
+      <br>
+      <textarea name="content" id="edit-content" required></textarea>
+      <br>
+      <button type="submit">Update Post</button>
+      <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>

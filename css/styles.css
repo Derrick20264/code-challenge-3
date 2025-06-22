@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1, h3, h4 {
+  color: #333;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#post-list {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#post-list div {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+#post-list div:hover {
+  background-color: #f0f0f0;
+}
+
+#post-detail {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+.hidden {
+  display: none;
+}

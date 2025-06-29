@@ -1,6 +1,4 @@
-// src/index.js
-
-const BASE_URL = "http://localhost:3000/posts";
+const BASE_URL = "https://json-server-2-d9ha.onrender.com/posts";
 
 // Show all post titles
 function showAllPosts() {
@@ -8,7 +6,7 @@ function showAllPosts() {
     .then(res => res.json())
     .then(posts => {
       const list = document.getElementById("post-list");
-      list.innerHTML = "";
+      list.innerHTML = "<h3>Posts</h3>";
       posts.forEach(post => {
         const item = document.createElement("div");
         item.textContent = post.title;
